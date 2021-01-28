@@ -1,5 +1,5 @@
-// import cipher from './cipher.js';
-// console.log(cipher);
+import cipher from './cipher.js';
+//console.log(cipher);
 
 var screen1 = document.getElementById("screen1");
 screen1.style.display="block";
@@ -39,8 +39,8 @@ back.addEventListener('click', () => {
     screen2.style.display="block";
     screen3.style.display="none";
 
-    var input1 = document.getElementById("decode");
-    input1.value =" ";
+    var input1 = document.getElementById("toDecode");
+    input1.value ="";
 });
 
 var back2 = document.getElementById("back2");
@@ -49,8 +49,8 @@ back2.addEventListener('click', () => {
     screen4.style.display="none";
     screen5.style.display="none";
 
-    var input2 = document.getElementById("code");
-    input2.value =" ";
+    var input2 = document.getElementById("toCode");
+    input2.value ="";
 
     if(document.getElementById("background").style.display=="none"){
         document.getElementById("background").style.display="block";
@@ -63,11 +63,10 @@ personalize.addEventListener('click', () => {
     if(screen5.style.display=="none"){
         screen5.style.display="block";
         document.getElementById("background").style.display="none";
-        document.getElementById("code2").style.display="none";
+
     } else{
         screen5.style.display="none";
         document.getElementById("background").style.display="block";
-        document.getElementById("code2").style.display="block";
     }
 });
     
@@ -76,179 +75,138 @@ password.addEventListener('click', () => {
     if(screen6.style.display=="none"){
         screen6.style.display="block";
         document.getElementById("background").style.display="none";
-        document.getElementById("decode2").style.display="none";
+
     } else{
         screen6.style.display="none";
         document.getElementById("background").style.display="block";
-        document.getElementById("decode2").style.display="block";
+
     }
 });
-    
 
 
-var def = 33; 
-var def2 = 17;
-var def3 = 19;
-var def4 = 3;
 
-function code() {
-    var code = document.getElementById("code").value;
 
-    var arr = [];
 
-    for( let i=0 ; i<code.length;i++) {
+var codeBtn = document.getElementById("codeBtn");
+codeBtn.addEventListener('click', function(){
 
-        var asciiNum= code.charCodeAt(i)
-            
-        if ((asciiNum>47) && (58>asciiNum)){
-            var arr8 = ((asciiNum-48+def2)%10)+48;
-            var arr9 = String.fromCharCode(arr8);
-            arr.push(arr9);
+    var toCode= document.getElementById("toCode").value;
+    var codeInput= document.getElementById("codeInput").value;
 
-        } else if ((asciiNum>96) && (123>asciiNum)){
-            
-            var arr4 = ((asciiNum-97 +def)%26)+97;
-            var arr5 = String.fromCharCode(arr4);
-            arr.push(arr5);
-            
-        } else if ((asciiNum>64) && (91>asciiNum)){
-            var arr2 = ((asciiNum-65+def)%26)+65;
-            var arr3 = String.fromCharCode(arr2);
-            arr.push(arr3);
+    if(toCode=="" || codeInput==""){
+         if(toCode=="" ){
+         alert( "Ingresa tu mensaje!♡")
+        } else{
+            alert("Ingresa tu código secreto!♡")
+        }
+    } else{
+    document.getElementById("toCode").value=cipher.encode(codeInput,toCode);
+    }
 
-        } else {
-            var arr6 = asciiNum;
-            var arr7 = String.fromCharCode(arr6);
-            arr.push(arr7);
-        } 
-
-    } 
-
-    document.getElementById("code").value= arr.join('');
-    
 }
 
-var code2 = document.getElementById("code2");
-code2.addEventListener('click', code); 
+); 
 
+var decodeBtn = document.getElementById("decodeBtn");
+decodeBtn.addEventListener('click', function (){
 
-function listo() {
-    var code = document.getElementById("code").value;
-    def = parseInt(document.getElementById("number").value);
-    def2 = parseInt(document.getElementById("number").value);
-    var arr = [];
+    var toDecode = document.getElementById("toDecode").value;
+    var decodeInput= document.getElementById("decodeInput").value;
 
-    for( let i=0 ; i<code.length;i++) {
-
-        var asciiNum= code.charCodeAt(i)
-            
-        if ((asciiNum>47) && (58>asciiNum)){
-            var arr8 = ((asciiNum-48+def2)%10)+48;
-            var arr9 = String.fromCharCode(arr8);
-            arr.push(arr9);
-
-        } else if ((asciiNum>96) && (123>asciiNum)){
-            
-            var arr4 = ((asciiNum-97 +def)%26)+97;
-            var arr5 = String.fromCharCode(arr4);
-            arr.push(arr5);
-            
-        } else if ((asciiNum>64) && (91>asciiNum)){
-            var arr2 = ((asciiNum-65+def)%26)+65;
-            var arr3 = String.fromCharCode(arr2);
-            arr.push(arr3);
-
-        } else {
-            var arr6 = asciiNum;
-            var arr7 = String.fromCharCode(arr6);
-            arr.push(arr7);
-        } 
-
-    } 
-
-    document.getElementById("code").value= arr.join('');
-    
+    if(toDecode=="" || decodeInput==""){
+        if(toDecode=="" ){
+        alert( "Ingresa tu mensaje!♡")
+        } else{
+            alert("Ingresa tu código secreto!♡")
+        }
+    } else{
+        document.getElementById("toDecode").value=cipher.decode(decodeInput,toDecode);
+    }
 }
 
-var listo2 = document.getElementById("listo");
-listo2.addEventListener('click', listo); 
+);
 
 
-function decode() {
-    var decode = document.getElementById("decode").value;
-    var arr = [];
 
-    for( let i=0 ; i<decode.length;i++) {
+// function cipher(ascii, asciiStart, cipherKey,resi){
 
-        var asciiNum= decode.charCodeAt(i)
+//     var arr1 = ((ascii-asciiStart+cipherKey)%resi)+asciiStart;
+//     var arr2 = String.fromCharCode(arr1);
+//     return arr2;
+// }
+
+
+// function letsCode() {
+
+//     var coding = document.getElementById("toCode").value;
+//     var def = parseInt(document.getElementById("codeInput").value);
+//     var arr= [];
+//     var newAscii;
+    
+//     for( var i=0 ; i<coding.length;i++) {
         
-        if ((asciiNum>47) && (58>asciiNum)){
-            var arr8 = ((asciiNum-48+def4)%10)+48;
-            var arr9 = String.fromCharCode(arr8);
-            arr.push(arr9);
+//         var ascii= coding.charCodeAt(i);
+                
+//         if ((ascii>47) && (58>ascii)){
+//             newAscii = cipher(ascii,48,def,10);
 
-        } else if ((asciiNum>96) && (123>asciiNum)){
-            
-            var arr4 = ((asciiNum-97+def3)%26)+97;
-            var arr5 = String.fromCharCode(arr4);
-            arr.push(arr5);   
+//         } else if ((ascii>96) && (123>ascii)){
+//             newAscii = cipher(ascii,97,def,26);
 
-        } else if ((asciiNum>64) && (91>asciiNum)){
-            var arr2 = ((asciiNum-65+def3)%26)+65;
-            var arr3 = String.fromCharCode(arr2);
-            arr.push(arr3);
+//         } else if ((ascii>64) && (91>ascii)){
+//             newAscii = cipher(ascii,65,def,26);
 
-        } else {
-            var arr6 = asciiNum;
-            var arr7 = String.fromCharCode(arr6);
-            arr.push(arr7);
-        } 
-            
-    } 
+//         } else {
+//             newAscii = String.fromCharCode(ascii);
 
-    document.getElementById("decode").value= arr.join('');
-    
-}
-
-var decode2 = document.getElementById("decode2");
-decode2.addEventListener('click', decode); 
-
-function listo3() {
-    var decode = document.getElementById("decode").value;
-    def3 = parseInt(document.getElementById("number2").value);
-    def4 = parseInt(document.getElementById("number2").value);
-    var arr = [];
-
-    for( let i=0 ; i<decode.length;i++) {
-
-        var asciiNum= decode.charCodeAt(i)
+//         } 
+//         arr.push(newAscii); 
         
-        if ((asciiNum>47) && (58>asciiNum)){
-            var arr8 = (((asciiNum-48-def4)%10)+10)%26+48;
-            var arr9 = String.fromCharCode(arr8);
-            arr.push(arr9);
+//     }
 
-        } else if ((asciiNum>96) && (123>asciiNum)){
-            
-            var arr4 = ((((asciiNum-97)-def3)%26)+26)%26+97;
-            var arr5 = String.fromCharCode(arr4);
-            arr.push(arr5);   
+//     document.getElementById("toCode").value= arr.join('');
+// }
 
-        } else if ((asciiNum>64) && (91>asciiNum)){
-            var arr2 = ((((asciiNum-65)-def3)%26)+26)%26+65;
-            var arr3 = String.fromCharCode(arr2);
-            arr.push(arr3);
+// var codeBtn = document.getElementById("codeBtn");
+// codeBtn.addEventListener('click', letsCode); 
 
-        } else {
-            var arr6 = asciiNum;
-            var arr7 = String.fromCharCode(arr6);
-            arr.push(arr7);
-        }         
-    } 
+// function decipher(ascii, asciiStart, cipherKey,resi){
 
-    document.getElementById("decode").value= arr.join('');
+//     var arr1 = (((ascii-asciiStart-cipherKey)%resi)+resi)%resi+asciiStart;
+//     var arr2 = String.fromCharCode(arr1);
+//     return arr2;
+// }
+
+// function letsDecode() {
+
+//     var def2 = parseInt(document.getElementById("decodeInput").value);
+//     var decoding = document.getElementById("decode").value;
+//     var arr= [];
+//     var ascii ;
+//     var newAscii ;
+
+//     for( var i=0 ; i<decoding.length;i++) {
+
+//         ascii= decoding.charCodeAt(i)
+                
+//         if ((ascii>47) && (58>ascii)){
+//             newAscii = decipher(ascii,48,def2,10);
+
+//         } else if ((ascii>96) && (123>ascii)){
+//             newAscii = decipher(ascii,97,def2,26);
+
+//         } else if ((ascii>64) && (91>ascii)){
+//             newAscii = decipher(ascii,65,def2,26);
+
+//         } else {
+//             newAscii = String.fromCharCode(ascii);
+
+//         } 
+//         arr.push(newAscii);
+//     }
     
-}
+//     document.getElementById("decode").value= arr.join('');
+// }
 
-var listo4 = document.getElementById("listo2");
-listo4.addEventListener('click', listo3); 
+// var decodeBtn = document.getElementById("decodeBtn");
+// decodeBtn.addEventListener('click', letsDecode); 

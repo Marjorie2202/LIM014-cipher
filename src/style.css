@@ -30,6 +30,7 @@ body{
 
 #lock1{
     text-align:center;
+    height:150px;
 }
 
 #screen1{
@@ -67,7 +68,7 @@ body{
 
 }
 
-#code{
+#toCode{
     background:transparent;
     width: 300px;
     height : 200px;
@@ -98,6 +99,18 @@ body{
     font-size: 50px;
     margin:0;
     display: block;
+    float: left; 
+    line-height: 50px;
+}
+
+.start{
+    font-family: 'Hello';
+    color: white; 
+    font-size: 50px;
+    margin:0;
+    display: block;
+    line-height: 50px;
+    text-align: center;
 }
 
 .txt{
@@ -141,6 +154,7 @@ body{
     float:left;
     margin-left:43%;
     margin-right:0.2cm;
+    height:80px;
 }
 
 #screen5{
@@ -170,12 +184,14 @@ body{
     float:left;
     margin-left:40%;
     margin-right:1cm;
+    height:120px;
 }
 
 #lock2{
     float:left;
     margin-left:40%;
     margin-right:1cm;
+    height:120px;
 }
 
 .fondo{
@@ -184,7 +200,7 @@ body{
     margin:auto;
 }
 
-#listo{
+#codeBtn{
     background-color: rgb(173, 0, 185) ; 
     border-color: pink; 
     border-width: 2.5px;
@@ -194,14 +210,14 @@ body{
     cursor: url(Imagenes/Tailless.cur),auto;
 }
 
-#listo:hover{
+#codeBtn:hover{
 
     background-color:white; 
     color:purple;
 
 }
 
-#listo2{
+#decodeBtn{
     background-color: rgb(173, 0, 185) ; 
     border-color: pink; 
     border-width: 2.5px;
@@ -211,10 +227,22 @@ body{
     cursor: url(Imagenes/Tailless.cur),auto;
 }
 
-#listo2:hover{
+#decodeBtn:hover{
 
     background-color:white; 
     color:purple;
 
 }
 
+
+.h50{
+    height:50px;
+}
+
+.h180{
+    height:180px;
+}
+
+.sub{
+    font-size:14px;
+}

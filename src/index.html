@@ -11,7 +11,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locked Message</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -24,92 +24,91 @@
         <br>
         <br>
         <br>
-        <img id ="lock1" src="Imagenes/candado.png" height= 150px>
+        <img id ="lock1" src="Imagenes/candado.png">
         <p id="title" > Locked </p>
-        <!-- <div id="secret">Descubre tu mensaje secreto</div> -->
+        <!-- <section id="secret">Descubre tu mensaje secreto</section> -->
       </section >
 
       <section id="screen2">
         <br>
-        <div id="select1">
-          <img id ="key" src="Imagenes/llave.png" height= 120px>
-          <p class = "text" style="float: left; line-height: 50px;">Descubre <br> tu mensaje</p>
-        </div>
+        <section id="select1">
+          <img id ="key" src="Imagenes/llave.png">
+          <p class = "text" >Descubre <br> tu mensaje</p>
+        </section>
         <br>
         <br>
         <br>
-        <div id="select2">
-          <img id ="lock2" src="Imagenes/candado.png" height= 120px>
-          <p class = "text" style="float: left; line-height: 50px;"> Cifra <br> tu mensaje</p>
-        </div>
+        <section id="select2">
+          <img id ="lock2" src="Imagenes/candado.png">
+          <p class = "text" > Cifra <br> tu mensaje</p>
+        </section>
         <br>
         <br>
         <br>
-        <img class="fondo1" src="Imagenes/fondo1.png" height= 180px>
+        <section class="fondo">
+          <img src="Imagenes/fondo1.png" class= "h180">
+        </section>
       </section >
 
       <section  id="screen3" class="select" >
         <br>
         <br>
-        <p class="text"> Ingresa el mensaje a descifrar </p>
+        <p class="start"> Ingresa el mensaje a descifrar </p>
         <br>
         <br>
         <form class="block">
-          <textarea class="txt" id="decode" name="decode" placeholder="Ingresa tu mensaje secreto"></textarea>
+          <textarea class="txt" id="toDecode" name="toDecode" rows="7" cols="70" placeholder="Ingresa tu mensaje secreto"></textarea>
         </form> 
         <br>
         <br>
-        <div id="decodeBtn">
-          <img class="carta" src="Imagenes/carta.png" height= 80px>
+        <section id="password">
+          <img class="carta" src="Imagenes/carta.png">
           <aside class = "text2">Descifrar</aside>
-        </div>
+        </section>
         <p style="clear:left;"></p>
         <br>
         <br>
-        <button class="btn"  id="password"> Tengo una clave secreta</button>
-        <br>
-        <div id="screen6">
-          <p class="sub"  style="font-size:14px;"> Ingresa tu clave secreta*</p>
-          <input type="text" name="number2" id="number2">
-          <button id="listo2">Listo ♡ </button>
-        </div>
+        <section id="screen6">
+          <p class="sub" > Ingresa tu clave secreta</p>
+          <input type="text" name="decodeInput" id="decodeInput">
+          <button id="decodeBtn">Listo♡</button>
+        </section>
         <br>
         <button class="btn"  id= "back"> Volver</button>
         <br>
-        <br>
-        <br>
-        <img class="fondo1" src="Imagenes/fondo1.png" height= 180px>
-
-      </section >
+        <section class="fondo">
+          <img src="Imagenes/fondo1.png" class= "h180">
+        </section>
+      </section>
 
       <section  id="screen4" class="select">
         <br>
         <br>
-        <p class = "text">Ingresa el mensaje a cifrar </p>
+        <p class="start">Ingresa el mensaje a cifrar </p>
         <br>
         <form class="block">
-          <textarea class="txt" id="code"  name= "code" rows="7" cols="70" placeholder="Ingresa tu mensaje aquí"></textarea>
+          <textarea class="txt" id="toCode" name="toCode" rows="7" cols="70" placeholder="Ingresa tu mensaje aquí"></textarea>
         </form>
         <br>
-        <div id="codeBtn">
-          <img class="carta" id="carta" src="Imagenes/carta.png" height= 80px>
+        <section id="personalize">
+          <img class="carta" src="Imagenes/carta.png">
           <p class = "text2" >Cifrar</p>
-        </div>
+        </section>
         <p style="clear:left;"></p>
         <br>
         <br>
-        <button class="btn"  id="personalize"> Personalizar </button>
         <br>
-        <div id="screen5">
-          <abbr class="sub" title="¿Cuántos dígitos se desplazarán las letras de tu mensaje?" style="font-size:14px;"> Elige tu clave secreta*</abbr>
-          <input type="text" name="number" id="number">
-          <p style="font-style: italic; font-size:14px;">*Ingresa un número</p>
-          <button id="listo">Listo ♡ </button>
-        </div>
+        <section id="screen5">
+          <abbr class="sub" title="¿Cuántos dígitos se desplazarán las letras de tu mensaje?" > Elige tu clave secreta*</abbr>
+          <input name="codeInput" id="codeInput" >
+          <p class="sub">*Ingresa un número</p>
+          <button id="codeBtn"> Listo♡ </button>
+        </section>
         <br>
         <button class="btn" type="button"  id="back2" > Volver </button>
-        <img id="background" class="fondo1" src="Imagenes/fondo1.png" height= 180px>
-
+        <section class="fondo">
+          <img id="background" src="Imagenes/fondo1.png" class= "h180">
+        </section>
       </section >
 
     </article>    
