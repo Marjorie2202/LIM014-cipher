@@ -76,7 +76,7 @@ body{
     resize:none;
 }
 
-#decode{
+#toDecode{
     background:transparent;
     width: 300px;
     height : 200px;
@@ -90,7 +90,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 35%;
-
 } 
 
 .text{
@@ -124,7 +123,7 @@ body{
 .text2{
     font-family: 'Hello';
     color: white; 
-    font-size: 50px;
+    font-size: 40px;
     margin:0;
     display: block;
     float: left;
@@ -136,7 +135,7 @@ body{
     border-color: #F69DA1;
     border-width: 3px;
     border-style:solid;
-    border-radius: 30px ;
+    /* border-radius: 30px ; */
     background-color:pink;
     color:black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -146,13 +145,13 @@ body{
 }
 
 .btn:hover{
-    background-color: rgb(202, 1, 216);
+    background-color: rgb(173, 0, 185);
     color:white;
 }
 
 .carta{
     float:left;
-    margin-left:43%;
+    margin-left:35%;
     margin-right:0.2cm;
     height:80px;
 }
@@ -206,7 +205,7 @@ body{
     border-width: 2.5px;
     color:white;
     font-family: 'Hello';
-    font-size:20px;
+    font-size:25px;
     cursor: url(Imagenes/Tailless.cur),auto;
 }
 
@@ -223,7 +222,7 @@ body{
     border-width: 2.5px;
     color:white;
     font-family: 'Hello';
-    font-size:20px;
+    font-size:25px;
     cursor: url(Imagenes/Tailless.cur),auto;
 }
 
@@ -239,7 +238,9 @@ body{
     height:50px;
 }
 
-.h180{
+.h180,
+#background1,
+#background2{
     height:180px;
 }
 

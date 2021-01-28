@@ -13,7 +13,8 @@
 
 Para el presente proyecto, decidí crear una aplicación de cifrado de mensajes para niñas y niños, emulando la experiencia de mandarse "mensajes secretos" en época escolar , donde usualmente se enviaban papelitos muy bien doblados o se hablaban usando mímicas y cifrando cada letra con un gesto.
 
-En primer lugar decidí realizar un ![sketch]() de mi aplicación y posteriormente lo llevé a ![figma](https://www.figma.com/file/GI6YAtZKnHIYK7fg3CCTZG/CIPHER--LOCKED?node-id=13%3A8). Como no estaba muy convencida luego de hacer las dos primeras interfaces diseñadas, le hice una pequeña entrevista a dos niñas (mis primitas), quienes me indicaron que los colores podían ser más claros, y las imagenes de los botones representadas por otras imagenes, por lo que cambié mi diseño en figma y logré recibir un feedback positivo respecto a las 4 interfaces hechas.
+En primer lugar decidí realizar un ![sketch](https://user-images.githubusercontent.com/75852321/106190150-3ef24780-6177-11eb-948e-253be42177eb.jpeg)) de mi aplicación y posteriormente lo llevé a ![figma](https://user-images.githubusercontent.com/75852321/106190326-811b8900-6177-11eb-9b27-5b18672976ed.PNG). Como no estaba muy convencida luego de hacer las dos primeras interfaces diseñadas, le hice una pequeña entrevista a dos usuarias(niñas de 9 y 11 años), quienes me indicaron que los colores podían ser más claros, y las imágenes de los botones "animadas" (representadas por otras imágenes), por lo que cambié mi diseño en figma (![prototAlta-1](https://user-images.githubusercontent.com/75852321/106190936-3fd7a900-6178-11eb-8fc7-e24c6588420e.PNG) y ![prototAlta-2](https://user-images.githubusercontent.com/75852321/106190982-4c5c0180-6178-11eb-9744-b75cf7275720.PNG)y logré recibir un feedback positivo respecto a las 4 interfaces hechas.
+
 
 ## 2. Usuarios del producto
 
@@ -21,13 +22,9 @@ Esta aplicación está dirigida a niñas y niños de edades 8 a 11 años aproxim
 
 ## 3. Solución de problemas mediante el producto 
 
-Actualmente debido a la coyuntura, las experiencias de niñas y niños en la escuela han cambiado totalmente, alejandolos de muchas actividades e interacciones que antes eran parte de su rutina. Por ello, esta aplicación busca crear una experiencia que se asemeje a un juego escolar. 
+Actualmente debido a la coyuntura, las experiencias de niñas y niños en la escuela han cambiado totalmente, alejándolos de muchas actividades e interacciones que antes eran parte de su rutina. Por ello, esta aplicación busca crear una experiencia que se asemeje a un juego escolar. 
 
 ## 4. Objetivos de aprendizaje
-
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
 
 ### HTML y CSS
 
