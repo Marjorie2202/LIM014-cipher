@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<!-- FYI:
+  HEADER : Agrupa introduccion de contenido
+  NAV: Agrupar navegacion del sitio
+  ARTICLE: Indicar el contenido
+  SECTION : Agrupar subsecciones de contenido
+  ASIDE : Contenido fuera del tema principal
+  FOOTER : Pie de página -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locked Message</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <article class="contenedor">
+
+      <section id="screen1">
+        <br>
+        <br>
+        <br>
+        <img id ="lock1" src="Imagenes/candado.png">
+        <p id="title" > Locked </p>
+
+      </section >
+
+      <section id="screen2">
+        <br>
+        <section id="select1">
+          <img id ="key" src="Imagenes/llave.png">
+          <p class = "text" >Descubre <br> tu mensaje</p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="select2">
+          <img id ="lock2" src="Imagenes/candado.png">
+          <p class = "text" > Cifra <br> tu mensaje</p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section class="fondo">
+          <img src="Imagenes/fondo1.png" class= "h180">
+        </section>
+      </section >
+
+      <section  id="screen3" class="select" >
+        <br>
+        <br>
+        <p class="start"> Ingresa el mensaje a descifrar ❣ </p>
+        <br>
+        <br>
+        <form class="block">
+          <textarea class="txt" id="toDecode" name="toDecode" rows="7" cols="70" placeholder="Ingresa tu mensaje secreto"></textarea>
+        </form> 
+        <br>
+        <br>
+        <section id="password">
+          <img class="carta" src="Imagenes/carta.png">
+          <aside class = "text2">Ingresa tu clave secreta</aside>
+        </section>
+        <p style="clear:left;"></p>
+        <br>
+        <br>
+        <section id="screen6">
+          <abbr class="sub" title="¿Cuántos dígitos se desplazarán las letras de tu mensaje?" > Digita un número*</abbr>
+          <input type="text" name="decodeInput" id="decodeInput"><br><br>
+          <button id="decodeBtn">Descifrar♡</button>
+        </section>
+        <br>
+        <button class="btn"  id= "back"> Volver</button>
+        <br>
+        <section class="fondo">
+          <img id="background1" src="Imagenes/fondo1.png">
+        </section>
+      </section>
+
+      <section  id="screen4" class="select">
+        <br>
+        <br>
+        <p class="start">Ingresa el mensaje a cifrar ❣ </p>
+        <br>
+        <form class="block">
+          <textarea class="txt" id="toCode" name="toCode" rows="7" cols="70" placeholder="Ingresa tu mensaje aquí"></textarea>
+        </form>
+        <br>
+        <section id="personalize">
+          <img class="carta" src="Imagenes/carta.png">
+          <p class = "text2" >Elige tu clave secreta </p>
+        </section>
+        <p style="clear:left;"></p>
+        <br>
+        <br>
+        <br>
+        <section id="screen5">
+          <abbr class="sub" title="¿Cuántos dígitos se desplazarán las letras de tu mensaje?" > Digita un número*</abbr>
+          <input name="codeInput" id="codeInput" > <br><br>
+          <button id="codeBtn"> Cifrar♡ </button>
+        </section>
+        <br>
+        <button class="btn" type="button"  id="back2" > Volver </button>
+        <section class="fondo">
+          <img id="background2" src="Imagenes/fondo1.png" >
+        </section>
+      </section >
+
+    </article>    
+
+    <script src="index.js" type="module"></script>
+
+  </body>
+  
+</html>

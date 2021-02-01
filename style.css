@@ -1,0 +1,248 @@
+
+
+@font-face{
+    font-family: 'Hello';
+    src: url(LIM014-CIPHER/src/Fonts/Hello.ttf);
+    font-weight: normal;
+    font-style:normal;
+}  
+
+html{
+    height:100%;
+    padding:0;
+    margin:0%;
+    background: linear-gradient(to bottom,rgb(215,0,231), rgb(255,147,205) );
+    cursor: url(Imagenes/Tailless.cur), auto;
+}
+
+body{
+    min-height:100%;
+    padding:0;
+    margin:0%;
+    cursor: url(Imagenes/Tailless.cur),auto;
+}
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+#lock1{
+    text-align:center;
+    height:150px;
+}
+
+#screen1{
+    background: linear-gradient(to bottom,rgb(215,0,231), rgb(255,147,205) );
+    text-align: center;
+    height:100vh;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+#screen2{
+    background: linear-gradient(to bottom,rgb(215,0,231), rgb(255,147,205) );
+    text-align: center;
+    height:100vh;
+    line-height: 70px;
+}
+
+#screen3{
+    background: linear-gradient(to bottom,rgb(215,0,231), rgb(255,147,205) );
+    text-align: center;
+    height:100vh;
+}
+
+#screen4{
+    background: linear-gradient(to bottom,rgb(215,0,231), rgb(255,147,205) );
+    text-align: center;
+    height:100vh;
+
+}
+
+#title{
+    font-family: 'Hello';
+    font-size: 100px;
+    color:white;
+
+}
+
+#toCode{
+    background:transparent;
+    width: 300px;
+    height : 200px;
+    text-align: center;
+    resize:none;
+}
+
+#toDecode{
+    background:transparent;
+    width: 300px;
+    height : 200px;
+    text-align: center;
+    resize:none;
+}
+
+.block{
+    background-image: url(Imagenes/paper.jpg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+} 
+
+.text{
+    font-family: 'Hello';
+    color: white; 
+    font-size: 50px;
+    margin:0;
+    display: block;
+    float: left; 
+    line-height: 50px;
+}
+
+.start{
+    font-family: 'Hello';
+    color: white; 
+    font-size: 50px;
+    margin:0;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+}
+
+.txt{
+    border: none;
+    font-family : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    margin:0;
+    text-align: center;
+}
+
+.text2{
+    font-family: 'Hello';
+    color: white; 
+    font-size: 40px;
+    margin:0;
+    display: block;
+    float: left;
+}
+
+.btn{
+    display: block;
+    padding: 0.4cm;
+    border-color: #F69DA1;
+    border-width: 3px;
+    border-style:solid;
+    /* border-radius: 30px ; */
+    background-color:pink;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:18px;
+    margin:auto;
+    cursor: url(Imagenes/Tailless.cur),auto;
+}
+
+.btn:hover{
+    background-color: rgb(173, 0, 185);
+    color:white;
+}
+
+.carta{
+    float:left;
+    margin-left:35%;
+    margin-right:0.2cm;
+    height:80px;
+}
+
+#screen5{
+    width: 30%;
+    padding: 0.5cm;
+    border-radius:5px;
+    color:white;
+    font-family: cursive;
+    margin:auto;
+    background: rgba(239, 41, 110, 0.781);
+
+}
+
+#screen6{
+    width: 30%;
+    padding: 0.5cm;
+    border-radius:5px;
+    color:white;
+    font-family: cursive;
+    margin:auto;
+    background: rgba(239, 41, 110, 0.781);
+
+}
+
+
+#key{
+    float:left;
+    margin-left:40%;
+    margin-right:1cm;
+    height:120px;
+}
+
+#lock2{
+    float:left;
+    margin-left:40%;
+    margin-right:1cm;
+    height:120px;
+}
+
+.fondo{
+    display:table-cell; 
+    vertical-align:bottom; 
+    margin:auto;
+}
+
+#codeBtn{
+    background-color: rgb(173, 0, 185) ; 
+    border-color: pink; 
+    border-width: 2.5px;
+    color:white;
+    font-family: 'Hello';
+    font-size:25px;
+    cursor: url(Imagenes/Tailless.cur),auto;
+}
+
+#codeBtn:hover{
+
+    background-color:white; 
+    color:purple;
+
+}
+
+#decodeBtn{
+    background-color: rgb(173, 0, 185) ; 
+    border-color: pink; 
+    border-width: 2.5px;
+    color:white;
+    font-family: 'Hello';
+    font-size:25px;
+    cursor: url(Imagenes/Tailless.cur),auto;
+}
+
+#decodeBtn:hover{
+
+    background-color:white; 
+    color:purple;
+
+}
+
+.h50{
+    height:50px;
+}
+
+.h180,
+#background1,
+#background2{
+    height:180px;
+}
+
+.sub{
+    font-size:14px;
+}
